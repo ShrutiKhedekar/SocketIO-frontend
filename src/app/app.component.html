@@ -2,5 +2,18 @@
   {{message}}
 </div>
 
-<input [(ngModel)]="message"/>
+<input [(ngModel)]="message" />
 <button (click)="sendMessage()">Send</button>
+
+
+<div class="cuecard">
+  <div *ngFor="let x of emailInfo">
+    <div class="Title">{{x.from}}
+
+    </div>
+    <div class="allEmails">
+      {{x.snippet}}
+    </div>
+    ---------------------------------
+  </div>
+</div>
